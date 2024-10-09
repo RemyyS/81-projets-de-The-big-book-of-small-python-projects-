@@ -1,0 +1,2 @@
+Python 3.12
+pyinputplus Version: 0.2.12
