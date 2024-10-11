@@ -8,20 +8,32 @@
 
 import pyinputplus as pyip
 
+
+
 messagetoencrypt = ""
 encryptedmessage = []
-letters = "ABCDEFGIJKLMNOPQRSTUVWXYZ"
+letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 caesar_cipher = 3 #Key to the cipher, this encrypts the message by 3 letters further.
 
+
+
 while True:
     messagetoencrypt = pyip.inputStr("Enter message to encrypt : ")
-    if messagetoencrypt.isalpha() == False:
-        print ("Do not enter numbers, Try again.")
-        continue
     break
 
 messagetoencrypt = messagetoencrypt.upper()
 
-for letters in messagetoencrypt:
-    append.letters[i+caesar_cipher]
+for x in messagetoencrypt:
+    if x in letters:
+        position = str(letters).find(x)
+        num = position + caesar_cipher
+    
+        if num > 26:
+            num = num - 26 #Code for the loop around if the letter + the cipher is above the string length
+        
+        newcharacter = letters[num]
+        encryptedmessage.append(newcharacter)
+
+print (f"Your encrypted message is :",' '.join(encryptedmessage))
+
