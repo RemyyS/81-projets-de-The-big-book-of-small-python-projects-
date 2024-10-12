@@ -16,11 +16,7 @@ letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 caesar_cipher = 3 #Key to the cipher, this encrypts the message by 3 letters further.
 
-
-
-while True:
-    messagetoencrypt = pyip.inputStr("Enter message to encrypt : ")
-    break
+messagetoencrypt = pyip.inputStr("Enter message to encrypt : ")
 
 messagetoencrypt = messagetoencrypt.upper()
 

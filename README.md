@@ -7,3 +7,7 @@
 2 : Birthday Paradox
 
 3 : Bitmap Message
+
+6 : Caesar Cipher
+
+7 : Caesar Hacker
