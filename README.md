@@ -13,3 +13,5 @@
 7 : Caesar Hacker
 
 10 : Cho-Han
+
+12 : Collatz Sequence
